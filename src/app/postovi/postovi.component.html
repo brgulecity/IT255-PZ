@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="onGetPostovi()">Prikazi Postove</button>
+<hr>
+<app-post *ngFor="let post of postovi" [post]="post" (postDeleted)="onDeleted($event)"></app-post>

@@ -1,0 +1,9 @@
+<div class="loginmodal-container" >
+  <h1>Register</h1><br>
+  <form (ngSubmit)="onSignup(f)" #f="ngForm">
+    <input name="email" placeholder="Email" ngModel>
+    <input name="name" placeholder="Username" ngModel>
+    <input type="password" name="pass" placeholder="Password" ngModel>
+    <button type="submit" class="btn btn-primary">Signup</button>
+  </form>
+</div>
